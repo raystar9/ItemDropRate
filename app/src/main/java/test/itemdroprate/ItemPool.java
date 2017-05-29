@@ -16,26 +16,10 @@ public class ItemPool {
         return list.get(indexRandom);
     }
 
-    public void setItemPool(int legend, int hero, int magic, int uncommon, int common) {
+    public void setItemPool(Rarity rarity, int number) {
 
-        for (int i = 0; i < legend; i++) {
-            list.add(Rarity.legend);
-        }
-
-        for (int i = 0; i < legend; i++) {
-            list.add(Rarity.legend);
-        }
-
-        for (int i = 0; i < legend; i++) {
-            list.add(Rarity.legend);
-        }
-
-        for (int i = 0; i < legend; i++) {
-            list.add(Rarity.legend);
-        }
-
-        for (int i = 0; i < legend; i++) {
-            list.add(Rarity.legend);
+        for (int i = 0; i < number; i++) {
+            list.add(rarity);
         }
     }
 }
